@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+
+<project name="hwProject" default="copyNonJava" basedir=".">
+    <target name="copyNonJava">
+        <copy todir="out/artifacts/Fanafy_war_exploded/WEB-INF/views">
+            <fileset dir="web/WEB-INF/views">
+                <include name="**/*.jsp"/>
+            </fileset>
+        </copy>
+
+        <copy todir="out/artifacts/Fanafy_war_exploded/css">
+            <fileset dir="web/css">
+                <include name="**/*.css"/>
+            </fileset>
+        </copy>
+    </target>
+</project>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+
+    <!--
+     We declare a new template named template-main.
+     This template is used for displaying the main page.
+     It has 4 attributes. These attributes are placeholder for our contents
+     For each attribute, we have assigned a corresponding JSP
+    -->
+    <definition name="template-main.mobile" template="/WEB-INF/views/mobile/layouts/mainLayout.jsp">
+        <put-attribute name="header" value="header" />
+        <put-attribute name="content" value="content" />
+        <put-attribute name="footer" value="footer" />
+    </definition>
+
+
+    <!--
+     We declare a new template named template-detail.
+     This template is used for displaying details of an item.
+     It has 5 attributes. These attributes are placeholder for our contents
+     For each attribute, we have assigned a corresponding JSP
+    -->
+    <definition name="homepage.mobile" extends="template-main.mobile">
+        <put-attribute name="header" value="/WEB-INF/views/mobile/homepage/homePageHeader.jsp" />
+        <put-attribute name="content" value="/WEB-INF/views/mobile/homepage/homePageContent.jsp" />
+        <put-attribute name="footer" value="/WEB-INF/views/mobile/homepage/homePageFooter.jsp" />
+    </definition>
+
+    <!--
+     We declare a new template named template-detail.
+     This template is used for displaying details of an item.
+     It has 5 attributes. These attributes are placeholder for our contents
+     For each attribute, we have assigned a corresponding JSP
+    -->
+    <definition name="list.events.mobile" extends="template-main.mobile">
+        <put-attribute name="header" value="/WEB-INF/views/mobile/events/listEventsHeader.jsp" />
+        <put-attribute name="content" value="/WEB-INF/views/mobile/events/listEvents.jsp" />
+        <put-attribute name="footer" value="/WEB-INF/views/mobile/homepage/homePageFooter.jsp" />
+    </definition>
+
+    <!--
+     We declare a new template named template-detail.
+     This template is used for displaying details of an item.
+     It has 5 attributes. These attributes are placeholder for our contents
+     For each attribute, we have assigned a corresponding JSP
+    -->
+    <definition name="event.findUpgrade.mobile" extends="template-main.mobile">
+        <put-attribute name="header" value="/WEB-INF/views/mobile/events/upgradeEventHeader.jsp" />
+        <put-attribute name="content" value="/WEB-INF/views/mobile/events/upgradeEvent.jsp" />
+        <put-attribute name="footer" value="/WEB-INF/views/mobile/homepage/homePageFooter.jsp" />
+    </definition>
+
+    <!--
+     We declare a new template named template-detail.
+     This template is used for displaying details of an item.
+     It has 5 attributes. These attributes are placeholder for our contents
+     For each attribute, we have assigned a corresponding JSP
+    -->
+    <definition name="currentTicketEntry" extends="template-main.mobile">
+        <put-attribute name="header" value="/WEB-INF/views/mobile/events/enterTicketInformationHeader.jsp" />
+        <put-attribute name="content" value="/WEB-INF/views/mobile/events/enterTicketInformation.jsp" />
+        <put-attribute name="footer" value="/WEB-INF/views/mobile/homepage/homePageFooter.jsp" />
+    </definition>
+
+    <definition name="order.mobile" extends="template-main.mobile">
+        <put-attribute name="header" value="/WEB-INF/views/mobile/order/orderHeader.jsp" />
+        <put-attribute name="content" value="/WEB-INF/views/mobile/order/orderInformation.jsp" />
+        <put-attribute name="footer" value="/WEB-INF/views/mobile/homepage/homePageFooter.jsp" />
+    </definition>
+
+    <definition name="order.confirmDialog" extends="template-main.mobile">
+        <put-attribute name="header" value="/WEB-INF/views/mobile/order/confirmDialogHeader.jsp" />
+        <put-attribute name="content" value="/WEB-INF/views/mobile/order/confirmDialog.jsp" />
+        <put-attribute name="footer" value="/WEB-INF/views/mobile/order/confirmDialogFooter.jsp" />
+    </definition>
+
+    <definition name="confirm" extends="template-main.mobile">
+        <put-attribute name="header" value="/WEB-INF/views/mobile/confirm/confirmHeader.jsp" />
+        <put-attribute name="content" value="/WEB-INF/views/mobile/confirm/confirm.jsp" />
+        <put-attribute name="footer" value="/WEB-INF/views/mobile/homepage/homePageFooter.jsp" />
+    </definition>
+
+    <definition name="loginInPath.mobile" extends="template-main.mobile">
+        <put-attribute name="header" value="/WEB-INF/views/mobile/login/loginHeader.jsp" />
+        <put-attribute name="content" value="/WEB-INF/views/mobile/login/login.jsp" />
+        <put-attribute name="footer" value="/WEB-INF/views/mobile/homepage/homePageFooter.jsp" />
+    </definition>
+
+</tiles-definitions>

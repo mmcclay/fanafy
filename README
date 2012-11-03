@@ -1,0 +1,15 @@
+install and setup git
+ 	http://help.github.com/win-set-up-git/
+install and setup intellij
+install standalone tomcat
+	http://mirror.candidhosting.com/pub/apache/tomcat/tomcat-7/v7.0.23/bin/apache-tomcat-7.0.23.zip
+	unzip to c:\git\tomcat
+	create environment variable:  "CATALINA_HOME" c:\git\tomcat
+	create environment variable: "JAVA_HOME" pointing to java install
+
+
+spring install instructions: http://blog.springsource.com/2011/01/04/green-beans-getting-started-with-spring-mvc/
+https://www.ibm.com/developerworks/java/library/j-grails01158/
+
+
+http://www.vaannila.com/spring/spring-hibernate-integration-1.html

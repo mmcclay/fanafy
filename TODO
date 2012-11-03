@@ -1,0 +1,13 @@
+Tiles integration
+get jstl working
+double check that hibernate template can be reused by multiple classes
+add database thread pooling
+accept emails to doc@blah.com which parse attachment, save the files, and add a notification to the db
+add file uploading feature
+add password encryption
+create data models
+create pages and flows
+create interceptor configuration example
+mobile
+app version
+
